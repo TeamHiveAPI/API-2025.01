@@ -32,8 +32,8 @@ Projeto da Fatec SJC em parceria com a Tecsus para criar um sistema IoT de monit
 | **RF19** | O sistema deve incluir um guia educativo no portal, explicando o significado de cada parâmetro meteorológico medido. | Baixa 🌱       |
 | **RF20** | O guia educativo deve explicar conceitos matemáticos (ex.: média, desvio padrão) usados nos cálculos dos parâmetros. | Baixa 🌱       |
 | **RF21** | O tutorial educativo deve ser acessível no portal do sistema, com navegação intuitiva para usuários públicos. | Baixa 🌱       |
-| **RF22** | O sistema deve implementar controle de acesso para administradores, permitindo gerenciar estações, parâmetros, alertas e usuários. | Alta 🚀        |
-| **RF23** | O sistema deve permitir que usuários públicos visualizem dashboards e relatórios, sem permissões de edição. | Alta 🚀        |
+| **RF22** | O sistema deve implementar controle de acesso para administradores, permitindo gerenciar estações, parâmetros, alertas e usuários. | Baixa 🌱        |
+| **RF23** | O sistema deve permitir que usuários públicos visualizem dashboards e relatórios, sem permissões de edição. | Baixa 🌱        |
 | **RF24** | Os dashboards devem incluir análises estatísticas, como médias diárias, tendências e correlações entre parâmetros. | Média 🛠️       |
 | **RF25** | O sistema deve gerar pelo menos três tipos de relatórios (resumo diário, análise mensal e alertas disparados), exportáveis em PDF ou Excel. | Média 🛠️       |
 
@@ -74,40 +74,27 @@ Projeto da Fatec SJC em parceria com a Tecsus para criar um sistema IoT de monit
 | 2      | Implementar CRUD de parâmetros meteorológicos                            | RF02                      | Sprint 01    |
 | 3      | Implementar CRUD de alertas                                              | RF03                      | Sprint 01    |
 | 4      | Implementar CRUD de usuários                                             | RF04                      | Sprint 01    |
-| 5      | Criar documentação detalhada das rotas da API                            | RNF06                     | Sprint 01    |
-| 6      | Incluir exemplos de uso na documentação da API                           | RNF07                     | Sprint 01    |
-| 7      | Configurar pipeline de integração contínua                               | RNF08                     | Sprint 01    |
-| 8      | Configurar execução automática de testes unitários e de integração       | RNF09                     | Sprint 01    |
-| 9      | Configurar deploy automático                                             | RNF10                     | Sprint 01    |
-| 10     | Garantir atualizações sem interrupções no deploy                         | RNF11                     | Sprint 01    |
-| 11     | Criar design intuitivo dos dashboards                                    | RNF01                     | Sprint 01    |
-| 12     | Aplicar estética agradável e profissional nos dashboards                 | RNF02                     | Sprint 01    |
-| 13     | Desenvolver recepção de dados das estações meteorológicas                | RF05                      | Sprint 02    |
-| 14     | Implementar processamento dos dados recebidos                            | RF06                      | Sprint 02    |
-| 15     | Armazenar os dados processados no banco de dados                         | RF07                      | Sprint 02    |
-| 16     | Criar dashboard interativo para visualização de dados em tempo real      | RF08                      | Sprint 02    |
-| 17     | Criar dashboard interativo para visualização de histórico de dados       | RF09                      | Sprint 02    |
-| 18     | Implementar geração automática de notificações                           | RF10                      | Sprint 02    |
-| 19     | Definir condições para disparo de alertas                                | RF11                      | Sprint 02    |
-| 20     | Implementar notificação de usuários sobre os alertas                     | RF12                      | Sprint 02    |
-| 21     | Integrar conceitos estatísticos nos dashboards                           | RF24                      | Sprint 02    |
-| 22     | Criar pelo menos três relatórios distintos com insights                  | RF25                      | Sprint 02    |
-| 23     | Implementar controle de acesso para administradores                      | RF22                      | Sprint 03    |
-| 24     | Implementar controle de acesso para usuários públicos                    | RF23                      | Sprint 03    |
-| 25     | Incluir elementos educacionais no portal para engajamento estudantil     | RNF03                     | Sprint 03    |
-| 26     | Demonstrar conceitos matemáticos aplicados aos dados                     | RNF04                     | Sprint 03    |
-| 27     | Criar funcionalidade de aprendizado baseado em problemas                 | RNF05                     | Sprint 03    |
-| 28     | Desenvolver um datalogger para coleta de dados                           | RF13                      | Sprint 03    |
-| 29     | Implementar armazenamento temporário dos dados coletados pelo datalogger | RF14                      | Sprint 03    |
-| 30     | Enviar os dados coletados pelo datalogger para o servidor                | RF15                      | Sprint 03    |
-| 31     | Selecionar componentes para montagem da estação meteorológica            | RF16                      | Sprint 03    |
-| 32     | Montar fisicamente a estação meteorológica                               | RF17                      | Sprint 03    |
-| 33     | Testar e calibrar a estação meteorológica                                | RF18                      | Sprint 03    |
-| 34     | Criar guia explicativo sobre os parâmetros meteorológicos                | RF19                      | Sprint 03    |
-| 35     | Incluir conceitos matemáticos no guia educativo                          | RF20                      | Sprint 03    |
-| 36     | Disponibilizar o tutorial educativo no portal do sistema                 | RF21                      | Sprint 03    |
-
----
+| 5      | Desenvolver recepção de dados das estações meteorológicas                | RF05                      | Sprint 02    |
+| 6      | Implementar processamento dos dados recebidos                            | RF06                      | Sprint 02    |
+| 7      | Armazenar os dados processados no banco de dados                         | RF07                      | Sprint 02    |
+| 8      | Criar dashboard interativo para visualização de dados em tempo real      | RF08                      | Sprint 02    |
+| 9      | Criar dashboard interativo para visualização de histórico de dados       | RF09                      | Sprint 02    |
+| 10     | Implementar geração automática de notificações                           | RF10                      | Sprint 02    |
+| 11     | Definir condições para disparo de alertas                                | RF11                      | Sprint 02    |
+| 12     | Implementar notificação de usuários sobre os alertas                     | RF12                      | Sprint 02    |
+| 13     | Integrar conceitos estatísticos nos dashboards                           | RF24                      | Sprint 02    |
+| 14     | Criar pelo menos três relatórios distintos com insights                  | RF25                      | Sprint 02    |
+| 15     | Implementar controle de acesso para administradores                      | RF22                      | Sprint 03    |
+| 16     | Implementar controle de acesso para usuários públicos                    | RF23                      | Sprint 03    |
+| 17     | Desenvolver um datalogger para coleta de dados                           | RF13                      | Sprint 03    |
+| 18     | Implementar armazenamento temporário dos dados coletados pelo datalogger | RF14                      | Sprint 03    |
+| 19     | Enviar os dados coletados pelo datalogger para o servidor                | RF15                      | Sprint 03    |
+| 20     | Selecionar componentes para montagem da estação meteorológica            | RF16                      | Sprint 03    |
+| 21     | Montar fisicamente a estação meteorológica                               | RF17                      | Sprint 03    |
+| 22     | Testar e calibrar a estação meteorológica                                | RF18                      | Sprint 03    |
+| 23     | Criar guia explicativo sobre os parâmetros meteorológicos                | RF19                      | Sprint 03    |
+| 24     | Incluir conceitos matemáticos no guia educativo                          | RF20                      | Sprint 03    |
+| 25     | Disponibilizar o tutorial educativo no portal do sistema                 | RF21                      | Sprint 03    |
 
 ## 📋 User Stories
 
