@@ -1,3 +1,6 @@
 [submodule "front-end"]
 	path = front-end
 	url = https://github.com/TeamHiveAPI/API-2025.01-FRONT
+[submodule "back-end"]
+	path = back-end
+	url = https://github.com/TeamHiveAPI/API-2025.01-BACK
