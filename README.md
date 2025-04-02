@@ -4,6 +4,63 @@
 Projeto da Fatec SJC em parceria com a Tecsus para criar um sistema IoT de monitoramento meteorológico, com foco em coleta, processamento e visualização de dados, além de alertas e educação ambiental.
 
 ---
+# Sistema de Coleta de Dados de Estações Meteorológicas
+
+## Sprint 2 - Sprint Backlog
+
+### 🎯 Objetivo da Sprint
+Desenvolver funcionalidades que permitam a coleta, processamento e visualização de dados meteorológicos, além de gerar alertas automáticos com base nas condições definidas.
+
+---
+
+### 📋 Sprint Backlog
+
+Abaixo estão as atividades planejadas para a Sprint 2, detalhando as tarefas necessárias para implementar os requisitos priorizados.
+
+| **ID**     | **Atividade**                                                                                                          | **Estimativa de Esforço** | **Estimativa de Dificuldade** |
+|------------|-----------------------------------------------------------------------------------------------------------------------|---------------------------|-------------------------------|
+| **SB2-01** | Configurar o endpoint da API para receber dados das estações meteorológicas via protocolo (ex.: Sigfox, LoRa).         | 8 horas                   | Média                        |
+| **SB2-02** | Implementar a lógica de autenticação e autorização para a recepção de dados, se necessário.                            | 4 horas                   | Baixa                        |
+| **SB2-03** | Criar um serviço para processar os dados recebidos, incluindo validação de integridade e conversão de formatos.         | 12 horas                  | Alta                         |
+| **SB2-04** | Implementar cálculos de agregados (ex.: médias, máximos, mínimos) para os dados processados.                            | 6 horas                   | Média                        |
+| **SB2-05** | Desenvolver a lógica para armazenar os dados processados no banco de dados, associando-os à estação e parâmetro.        | 8 horas                   | Média                        |
+| **SB2-06** | Criar endpoints da API para consulta de dados em tempo real e histórico.                                               | 10 horas                  | Alta                         |
+| **SB2-07** | Desenvolver a interface do dashboard para visualização em tempo real, incluindo gráficos e tabelas.                     | 12 horas                  | Alta                         |
+| **SB2-08** | Implementar a atualização automática do dashboard a cada 5 minutos.                                                    | 4 horas                   | Baixa                        |
+| **SB2-09** | Criar a interface do dashboard para visualização do histórico de dados, com filtros por data e estação.                 | 10 horas                  | Alta                         |
+| **SB2-10** | Implementar a funcionalidade de exportação de dados históricos em CSV.                                                 | 6 horas                   | Média                        |
+| **SB2-11** | Desenvolver a lógica para verificar as condições de alerta a cada ciclo de dados recebidos.                             | 8 horas                   | Média                        |
+| **SB2-12** | Implementar o disparo de notificações (ex.: e-mail, SMS) quando uma condição de alerta é atingida.                      | 10 horas                  | Alta                         |
+| **SB2-13** | Criar uma interface para administradores definirem as condições de alerta (ex.: temperatura > 35°C).                    | 8 horas                   | Média                        |
+| **SB2-14** | Integrar a definição de condições de alerta com o backend.                                                             | 4 horas                   | Baixa                        |
+| **SB2-15** | Desenvolver a lógica para notificar os usuários sobre os alertas gerados, incluindo detalhes da condição disparada.     | 6 horas                   | Média                        |
+| **SB2-16** | Implementar a exibição de alertas no dashboard para usuários públicos.                                                 | 4 horas                   | Baixa                        |
+| **SB2-17** | Integrar conceitos estatísticos nos dashboards, como médias diárias, tendências e correlações.                          | 10 horas                  | Alta                         |
+| **SB2-18** | Desenvolver pelo menos três relatórios distintos (ex.: resumo diário, análise mensal, alertas disparados).             | 12 horas                  | Alta                         |
+| **SB2-19** | Criar a interface para geração e exportação de relatórios em PDF ou Excel.                                             | 8 horas                   | Média                        |
+| **SB2-20** | Testar a recepção de dados simulando o envio de diferentes tipos de dados e condições.                                 | 6 horas                   | Média                        |
+| **SB2-21** | Testar o processamento de dados, incluindo casos de dados inválidos ou incompletos.                                     | 4 horas                   | Baixa                        |
+| **SB2-22** | Testar o armazenamento de dados, verificando a integridade e a recuperação correta.                                     | 4 horas                   | Baixa                        |
+| **SB2-23** | Testar a visualização em tempo real, garantindo que os dados são atualizados corretamente.                              | 4 horas                   | Baixa                        |
+| **SB2-24** | Testar a visualização do histórico, aplicando filtros e exportando dados.                                               | 4 horas                   | Baixa                        |
+| **SB2-25** | Testar a geração de alertas, simulando condições que disparam notificações.                                             | 6 horas                   | Média                        |
+| **SB2-26** | Testar a definição de condições de alerta, garantindo que são salvas e aplicadas corretamente.                          | 4 horas                   | Baixa                        |
+| **SB2-27** | Testar a notificação de usuários, verificando se as mensagens são enviadas e recebidas corretamente.                    | 4 horas                   | Baixa                        |
+| **SB2-28** | Testar a integração de conceitos estatísticos nos dashboards, verificando a precisão dos cálculos.                      | 4 horas                   | Média                        |
+| **SB2-29** | Testar a geração de relatórios, garantindo que os dados são corretos e os formatos de exportação funcionam.             | 4 horas                   | Baixa                        |
+
+---
+
+### 📝 Notas sobre o Sprint Backlog
+
+- **Estimativa de Esforço**: Calculada em horas para facilitar o planejamento. Total: **190 horas**.
+- **Estimativa de Dificuldade**:
+  - **Baixa**: Tarefas simples ou repetitivas, como testes básicos ou integrações menores.
+  - **Média**: Tarefas que requerem esforço moderado ou conhecimento específico, como cálculos estatísticos ou interfaces básicas.
+  - **Alta**: Tarefas complexas que envolvem integração de sistemas, desenvolvimento de interfaces avançadas ou lógica crítica.
+- **Ajustes**: As estimativas e dificuldades podem ser refinadas com base na experiência da equipe durante a sprint.
+
+---
 
 ## 📋 Requisitos Funcionais
 
