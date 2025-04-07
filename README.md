@@ -185,10 +185,3 @@ Abaixo estão as atividades planejadas para a Sprint 2, detalhando as tarefas ne
 | **US39** | Como usuário público, eu quero gerar relatórios (diário, mensal, alertas) e exportá-los em PDF ou Excel. | - Seleção de tipo de relatório. <br> - Geração em formato exportável. <br> - Dados relevantes incluídos. |
 
 ---
-
-## 📝 Notas Finais
-- O **Sprint Backlog da Sprint 2** foi ajustado, removendo as tarefas de teste (SB2-14 a SB2-23), reduzindo o esforço total para 96 horas.
-- O **Product Backlog** foi atualizado, marcando todas as funcionalidades da Sprint 2 como "Concluído" e mantendo as da Sprint 3 como "Pendente".
-- As seções de **Requisitos Funcionais**, **Requisitos Não Funcionais** e **User Stories** foram mantidas, pois estão alinhadas com o projeto.
-
-Se precisar de mais ajustes ou tiver dúvidas, é só avisar!
