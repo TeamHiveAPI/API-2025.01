@@ -14,7 +14,7 @@ Desenvolver funcionalidades que permitam a coleta, processamento e visualizaçã
 
 ### 📋 Sprint Backlog
 
-Abaixo estão as atividades planejadas para a Sprint 2, detalhando as tarefas necessárias para implementar os requisitos priorizados. Os dados serão simulados usando Mosquitto com MQTT, já que não há estações físicas nesta fase. As tarefas de teste foram removidas conforme solicitado.
+Abaixo estão as atividades planejadas para a Sprint 2, detalhando as tarefas necessárias para implementar os requisitos priorizados. Os dados serão simulados usando o broker Mosquitto com MQTT, já que não há estações físicas nesta fase. As tarefas de teste foram removidas conforme solicitado.
 
 | **ID**     | **Descrição**                                                                                                          | **Estimativa de Esforço** | **Estimativa de Dificuldade** |
 |------------|-----------------------------------------------------------------------------------------------------------------------|---------------------------|-------------------------------|
@@ -40,6 +40,7 @@ Abaixo estão as atividades planejadas para a Sprint 2, detalhando as tarefas ne
   - **Baixa**: Tarefas simples como configurações básicas.
   - **Média**: Tarefas que requerem esforço moderado, como interfaces ou scripts.
   - **Alta**: Tarefas complexas envolvendo integração ou lógica avançada.
+- **Observação**: Para a Sprint 2, os dados são simulados via MQTT, enquanto o requisito RF05 prevê o uso de Sigfox, LoRa ou NB-IoT, que serão implementados em fases futuras com estações físicas.
 
 ---
 
@@ -53,7 +54,7 @@ Abaixo estão as atividades planejadas para a Sprint 2, detalhando as tarefas ne
 | **RF02** | O sistema deve permitir que administradores definam, visualizem, modifiquem e removam parâmetros meteorológicos (ex.: temperatura, umidade) associados a cada estação. | Alta 🚀        |
 | **RF03** | O sistema deve permitir que administradores configurem, consultem, alterem e removam alertas baseados em limites (thresholds) de parâmetros meteorológicos. | Alta 🚀        |
 | **RF04** | O sistema deve permitir que administradores gerenciem usuários, incluindo criação, leitura, atualização e exclusão. | Alta 🚀        |
-| **RF05** | O sistema deve receber dados enviados pelas estações meteorológicas via protocolos como Sigfox, LoRa ou NB-IoT. | Média 🛠️       |
+| **RF05** | O sistema deve receber dados enviados pelas estações meteorológicas via protocolos como Sigfox, LoRa ou NB-IoT (MQTT usado para simulação na Sprint 2). | Média 🛠️       |
 | **RF06** | O sistema deve processar os dados recebidos, validando integridade, convertendo formatos e calculando agregados (ex.: médias), se necessário. | Média 🛠️       |
 | **RF07** | O sistema deve armazenar os dados processados em um banco de dados relacional ou não relacional, garantindo integridade e disponibilidade. | Média 🛠️       |
 | **RF08** | O sistema deve fornecer dashboards interativos que exibam dados meteorológicos em tempo real, atualizados a cada 5 minutos. | Média 🛠️       |
