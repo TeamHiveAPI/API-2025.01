@@ -1,46 +1,40 @@
 # Sistema de Coleta de Dados de Estações Meteorológicas
 
 ## 🌟 Visão Geral
-Projeto da Fatec SJC em parceria com a Tecsus para criar um sistema IoT de monitoramento meteorológico, com foco em coleta, processamento e visualização de dados, além de alertas e educação ambiental.
+Projeto desenvolvido pela Fatec SJC em parceria com a Tecsus para criar um sistema IoT de monitoramento meteorológico. O objetivo é realizar a coleta, o processamento e a visualização de dados meteorológicos, além de oferecer alertas em tempo real e promover educação ambiental por meio de um portal interativo.
 
 ---
 
-## Sprint 2 - Sprint Backlog
+## Sprint 3 - Sprint Backlog
 
 ### 🎯 Objetivo da Sprint
-Desenvolver funcionalidades que permitam a coleta, processamento e visualização de dados meteorológicos simulados via MQTT, implementar autenticação para controlar o acesso, e exibir a localização das estações em um mapa durante alertas.
+Desenvolver funcionalidades relacionadas ao datalogger para coleta, armazenamento e envio de dados, montar e calibrar a estação meteorológica física, e implementar o guia educativo no portal para promover educação ambiental e conceitos matemáticos.
 
 ---
 
 ### 📋 Sprint Backlog
 
-Abaixo estão as atividades planejadas para a Sprint 2, detalhando as tarefas necessárias para implementar os requisitos priorizados. Os dados serão simulados usando o broker Mosquitto com MQTT, já que não há estações físicas nesta fase. As tarefas de teste foram removidas conforme solicitado.
+Abaixo estão as atividades planejadas para a Sprint 3, detalhando as tarefas necessárias para implementar os requisitos priorizados.
 
 | **ID**     | **Descrição**                                                                                                          | **Estimativa de Esforço** | **Estimativa de Dificuldade** |
 |------------|-----------------------------------------------------------------------------------------------------------------------|---------------------------|-------------------------------|
-| **SB2-01** | Configurar o broker Mosquitto para simular o envio de dados das estações meteorológicas via MQTT.                     | 4 horas                   | Baixa                        |
-| **SB2-02** | Criar scripts em Python para gerar e enviar dados falsos (ex.: temperatura, umidade) via MQTT.                         | 6 horas                   | Média                        |
-| **SB2-03** | Implementar a lógica no backend para receber e processar os dados enviados via MQTT.                                   | 12 horas                  | Alta                         |
-| **SB2-04** | Armazenar os dados processados no banco de dados, associando-os à estação e ao parâmetro.                              | 8 horas                   | Média                        |
-| **SB2-05** | Criar endpoints da API para consulta de dados em tempo real e históricos.                                              | 10 horas                  | Alta                         |
-| **SB2-06** | Desenvolver o dashboard front-end para visualização de dados em tempo real, com gráficos atualizados via WebSocket.    | 10 horas                  | Alta                         |
-| **SB2-07** | Desenvolver o dashboard front-end para visualização de histórico de dados, com filtros por data, estação e parâmetro.  | 8 horas                   | Média                        |
-| **SB2-08** | Implementar a lógica para verificar periodicamente as condições de alerta (ex.: temperatura > 35°C).                   | 8 horas                   | Média                        |
-| **SB2-09** | Implementar o disparo de notificações (e-mail ou SMS) quando uma condição de alerta for atingida.                      | 10 horas                  | Alta                         |
-| **SB2-10** | Implementar autenticação no sistema para controlar o acesso às funcionalidades administrativas e públicas.             | 12 horas                  | Alta                         |
-| **SB2-11** | Integrar métricas estatísticas nos dashboards (ex.: médias, tendências).                                               | 8 horas                   | Alta                         |
-| **SB2-12** | Desenvolver pelo menos três relatórios distintos (ex.: resumo diário, análise mensal, alertas disparados).             | 10 horas                  | Alta                         |
-| **SB2-13** | Adicionar um mapa no dashboard front-end para exibir a localização da estação quando houver um alerta ativo.           | 6 horas                   | Média                        |
+| **SB3-01** | Implementar o datalogger para coletar dados dos sensores a cada 10 minutos e enviá-los ao servidor.                    | 10 horas                  | Alta                         |
+| **SB3-02** | Configurar o datalogger para armazenar dados localmente por até 30 dias após o envio ao servidor.                      | 8 horas                   | Média                        |
+| **SB3-03** | Desenvolver a lógica para enviar os dados coletados pelo datalogger ao servidor a cada 10 minutos via MQTT pelo broker Mosquitto. | 10 horas                  | Alta                         |
+| **SB3-04** | Montar fisicamente a estação meteorológica, garantindo a integração e o funcionamento de todos os sensores.            | 12 horas                  | Alta                         |
+| **SB3-05** | Testar e calibrar a estação meteorológica para garantir a precisão dos dados dentro de ±2% de erro.                    | 10 horas                  | Alta                         |
+| **SB3-06** | Desenvolver o guia educativo no portal, explicando os parâmetros meteorológicos (ex.: temperatura, umidade).           | 8 horas                   | Média                        |
+| **SB3-07** | Incluir explicações de conceitos matemáticos (ex.: média, desvio padrão) no guia educativo.                           | 6 horas                   | Média                        |
+| **SB3-08** | Criar uma interface intuitiva no portal para navegação do tutorial educativo, acessível a usuários públicos.           | 8 horas                   | Média                        |
 
 ---
 
 ### 📝 Notas sobre o Sprint Backlog
-- **Estimativa de Esforço**: Total de **96 horas** (após remoção das tarefas de teste).
+- **Estimativa de Esforço**: Total de **72 horas**.
 - **Estimativa de Dificuldade**:
-  - **Baixa**: Tarefas simples como configurações básicas.
-  - **Média**: Tarefas que requerem esforço moderado, como interfaces ou scripts.
-  - **Alta**: Tarefas complexas envolvendo integração ou lógica avançada.
-- **Observação**: Para a Sprint 2, os dados são simulados via MQTT, enquanto o requisito RF05 prevê o uso de Sigfox, LoRa ou NB-IoT, que serão implementados em fases futuras com estações físicas.
+  - **Média**: Tarefas que envolvem desenvolvimento de interfaces ou configurações.
+  - **Alta**: Tarefas complexas, como implementação do datalogger, montagem física e calibração da estação.
+- **Foco**: Concluir os requisitos de hardware (estação física) e educacionais (guia), além de implementar o datalogger para suportar a coleta de dados em cenários reais.
 
 ---
 
@@ -54,7 +48,7 @@ Abaixo estão as atividades planejadas para a Sprint 2, detalhando as tarefas ne
 | **RF02** | O sistema deve permitir que administradores definam, visualizem, modifiquem e removam parâmetros meteorológicos (ex.: temperatura, umidade) associados a cada estação. | Alta 🚀        |
 | **RF03** | O sistema deve permitir que administradores configurem, consultem, alterem e removam alertas baseados em limites (thresholds) de parâmetros meteorológicos. | Alta 🚀        |
 | **RF04** | O sistema deve permitir que administradores gerenciem usuários, incluindo criação, leitura, atualização e exclusão. | Alta 🚀        |
-| **RF05** | O sistema deve receber dados enviados pelas estações meteorológicas via protocolos como Sigfox, LoRa ou NB-IoT (MQTT usado para simulação na Sprint 2). | Média 🛠️       |
+| **RF05** | O sistema deve receber dados enviados pelas estações meteorológicas via protocolos como Sigfox, LoRa ou NB-IoT. | Média 🛠️       |
 | **RF06** | O sistema deve processar os dados recebidos, validando integridade, convertendo formatos e calculando agregados (ex.: médias), se necessário. | Média 🛠️       |
 | **RF07** | O sistema deve armazenar os dados processados em um banco de dados relacional ou não relacional, garantindo integridade e disponibilidade. | Média 🛠️       |
 | **RF08** | O sistema deve fornecer dashboards interativos que exibam dados meteorológicos em tempo real, atualizados a cada 5 minutos. | Média 🛠️       |
@@ -68,7 +62,7 @@ Abaixo estão as atividades planejadas para a Sprint 2, detalhando as tarefas ne
 | **RF16** | A equipe deve selecionar componentes de baixo custo para a estação meteorológica, incluindo sensores de vento, pluviômetro, umidade, temperatura e pressão. | Baixa 🌱       |
 | **RF17** | A equipe deve montar fisicamente a estação meteorológica, garantindo que todos os sensores estejam calibrados e operacionais. | Baixa 🌱       |
 | **RF18** | A equipe deve testar e calibrar a estação meteorológica para garantir precisão dos dados dentro de ±2% de erro. | Baixa 🌱       |
-| **RF19** | O sistema deve incluir um guia educativo no portal, explicando o significado de cada parâmetro meteorológico medido. | Baixa 🌱       |
+| **RF19** | O sistema deve incluir um guia educativo no portal, explicando o significado de cada parâmetro meteorológico medido. zover | Baixa 🌱       |
 | **RF20** | O guia educativo deve explicar conceitos matemáticos (ex.: média, desvio padrão) usados nos cálculos dos parâmetros. | Baixa 🌱       |
 | **RF21** | O tutorial educativo deve ser acessível no portal do sistema, com navegação intuitiva para usuários públicos. | Baixa 🌱       |
 | **RF22** | O sistema deve implementar controle de acesso para administradores, permitindo gerenciar estações, parâmetros, alertas e usuários. | Média 🛠️       |
@@ -93,15 +87,8 @@ Abaixo estão as atividades planejadas para a Sprint 2, detalhando as tarefas ne
 | **RNF07** | A documentação da API deve incluir exemplos de requisições e respostas para cada rota. | Alta 🚀        |
 | **RNF08** | O projeto deve configurar um pipeline de integração contínua que execute testes automatizados a cada commit. | Alta 🚀        |
 | **RNF09** | O pipeline deve incluir testes unitários e de integração, com cobertura mínima de 80% do código. | Alta 🚀        |
-| **RNF10** | O deploy deve ser automático para ambientes de teste após merge na branch principal e para produção após aprovação manual. | Alta 🚀        |
+| **RNF10** | O deploy deve ser automático para ambientes de teste após merge na branch principal e para produção após aprovação manual.ECC | Alta 🚀        |
 | **RNF11** | O deploy automático deve garantir zero downtime, usando estratégias como blue-green deployment ou rolling updates. | Alta 🚀        |
-
----
-
-## 🎨 Estilização e Priorização
-- **🚀 Alta**: Requisitos críticos para a base do sistema (Sprint 01 e fundamentos técnicos).
-- **🛠️ Média**: Funcionalidades importantes para o uso do sistema (Sprint 02).
-- **🌱 Baixa**: Complementos e objetivos educacionais (Sprint 03 e atividades paralelas).
 
 ---
 
@@ -162,7 +149,7 @@ Abaixo estão as atividades planejadas para a Sprint 2, detalhando as tarefas ne
 | **US15** | Como administrador, eu quero criar um usuário com nome, e-mail, senha e nível de acesso, para gerenciar permissões. | - Entrada de nome, e-mail, senha e nível. <br> - Validação de e-mail único. <br> - Usuário disponível após criação. |
 | **US16** | Como administrador, eu quero visualizar a lista de usuários cadastrados, para gerenciá-los. | - Lista com nome, e-mail e nível de acesso. <br> - Suporte a paginação. <br> - Filtros por nome ou nível. |
 | **US17** | Como administrador, eu quero atualizar os dados de um usuário existente, para mantê-los atualizados. | - Edição de nome, e-mail, senha e nível. <br> - Validação de e-mail único. <br> - Salvamento com dados válidos. |
-| **US18** | Como administrador, eu quero excluir um usuário que não precisa mais de acesso, para manter o sistema seguro. | - Confirmação antes da exclusão. <br> - Usuário removido da lista. |
+| **US18** | Como administrador, eu quero excluir um usuário que não precisa mais de acesso, para manter o sistema seguro. | - Confirmação antes da exclusão. <br> - Usuário removida da lista. |
 | **US19** | Como sistema, eu quero receber dados das estações via Sigfox, LoRa ou NB-IoT, para iniciar o processamento. | - Suporte a um protocolo. <br> - Registro de data e hora de recebimento. <br> - Tratamento de falhas. |
 | **US20** | Como sistema, eu quero processar os dados recebidos, convertendo-os e validando-os, para garantir sua utilidade. | - Conversão de dados brutos (ex.: °C). <br> - Validação de valores (ex.: -50°C a 60°C). <br> - Rejeição de dados inválidos. |
 | **US21** | Como sistema, eu quero armazenar os dados processados no banco, associando-os à estação e parâmetro, para consulta futura. | - Armazenamento com estação, parâmetro, valor, data e hora. <br> - Integridade e eficiência na recuperação. |
