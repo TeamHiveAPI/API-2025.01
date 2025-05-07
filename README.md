@@ -16,16 +16,16 @@ Desenvolver funcionalidades relacionadas ao datalogger para coleta, armazenament
 
 Abaixo estão as atividades planejadas para a Sprint 3, detalhando as tarefas necessárias para implementar os requisitos priorizados.
 
-| **ID**     | **Descrição**                                                                                                          | **Estimativa de Esforço** | **Estimativa de Dificuldade** |
-|------------|-----------------------------------------------------------------------------------------------------------------------|---------------------------|-------------------------------|
-| **SB3-01** | Implementar o datalogger para coletar dados dos sensores a cada 10 minutos e enviá-los ao servidor.                    | 10 horas                  | Alta                         |
-| **SB3-02** | Configurar o datalogger para armazenar dados localmente por até 30 dias após o envio ao servidor.                      | 8 horas                   | Média                        |
-| **SB3-03** | Desenvolver a lógica para enviar os dados coletados pelo datalogger ao servidor a cada 10 minutos via MQTT pelo broker Mosquitto. | 10 horas                  | Alta                         |
-| **SB3-04** | Montar fisicamente a estação meteorológica, garantindo a integração e o funcionamento de todos os sensores.            | 12 horas                  | Alta                         |
-| **SB3-05** | Testar e calibrar a estação meteorológica para garantir a precisão dos dados dentro de ±2% de erro.                    | 10 horas                  | Alta                         |
-| **SB3-06** | Desenvolver o guia educativo no portal, explicando os parâmetros meteorológicos (ex.: temperatura, umidade).           | 8 horas                   | Média                        |
-| **SB3-07** | Incluir explicações de conceitos matemáticos (ex.: média, desvio padrão) no guia educativo.                           | 6 horas                   | Média                        |
-| **SB3-08** | Criar uma interface intuitiva no portal para navegação do tutorial educativo, acessível a usuários públicos.           | 8 horas                   | Média                        |
+
+| **ID**     | **Descrição**                                                                                                          | **Estimativa de Esforço** | **Estimativa de Dificuldade** | **Product Backlog ID** |
+|------------|-----------------------------------------------------------------------------------------------------------------------|---------------------------|-------------------------------|-------------------------|
+| **SB3-01** | Implementar o datalogger para coletar dados dos sensores a cada 10 minutos e enviá-los ao servidor.                    | 10 horas                  | Alta                          | 17                        |
+| **SB3-02** | Desenvolver a lógica para enviar os dados coletados pelo datalogger ao servidor a cada 10 minutos via MQTT pelo broker Mosquitto. | 10 horas                  | Alta                          | 18                        |
+| **SB3-03** | Montar fisicamente a estação meteorológica, garantindo a integração e o funcionamento de todos os sensores.            | 12 horas                  | Alta                          | 19 & 20                        |
+| **SB3-04** | Testar e calibrar a estação meteorológica para garantir a precisão dos dados dentro de ±2% de erro.                    | 10 horas                  | Alta                          | 21                        |
+| **SB3-05** | Desenvolver o guia educativo no portal, explicando os parâmetros meteorológicos (ex.: temperatura, umidade).           | 8 horas                   | Média                         | 22                        |
+| **SB3-06** | Incluir explicações de conceitos matemáticos (ex.: média, desvio padrão) no guia educativo.                           | 6 horas                   | Média                         | 23                        |
+| **SB3-07** | Criar uma interface intuitiva no portal para navegação do tutorial educativo, acessível a usuários públicos.           | 8 horas                   | Média                         | 24                        |
 
 ---
 
@@ -57,18 +57,17 @@ Abaixo estão as atividades planejadas para a Sprint 3, detalhando as tarefas ne
 | **RF11** | Administradores devem poder definir condições para disparo de alertas, como "temperatura > 35°C" ou "umidade < 20%". | Média 🛠️       |
 | **RF12** | O sistema deve enviar notificações aos usuários sobre alertas gerados, incluindo detalhes da condição que os disparou. | Média 🛠️       |
 | **RF13** | O sistema deve implementar um datalogger que colete dados dos sensores a cada 10 minutos e os armazene localmente. | Baixa 🌱       |
-| **RF14** | O datalogger deve armazenar dados localmente por até 24 horas antes de enviá-los ao servidor. | Baixa 🌱       |
-| **RF15** | O datalogger deve enviar os dados coletados ao servidor central a cada hora, via Wi-Fi ou conexão celular. | Baixa 🌱       |
-| **RF16** | A equipe deve selecionar componentes de baixo custo para a estação meteorológica, incluindo sensores de vento, pluviômetro, umidade, temperatura e pressão. | Baixa 🌱       |
-| **RF17** | A equipe deve montar fisicamente a estação meteorológica, garantindo que todos os sensores estejam calibrados e operacionais. | Baixa 🌱       |
-| **RF18** | A equipe deve testar e calibrar a estação meteorológica para garantir precisão dos dados dentro de ±2% de erro. | Baixa 🌱       |
-| **RF19** | O sistema deve incluir um guia educativo no portal, explicando o significado de cada parâmetro meteorológico medido. zover | Baixa 🌱       |
-| **RF20** | O guia educativo deve explicar conceitos matemáticos (ex.: média, desvio padrão) usados nos cálculos dos parâmetros. | Baixa 🌱       |
-| **RF21** | O tutorial educativo deve ser acessível no portal do sistema, com navegação intuitiva para usuários públicos. | Baixa 🌱       |
-| **RF22** | O sistema deve implementar controle de acesso para administradores, permitindo gerenciar estações, parâmetros, alertas e usuários. | Média 🛠️       |
-| **RF23** | O sistema deve permitir que usuários públicos visualizem dashboards e relatórios, sem permissões de edição. | Média 🛠️       |
-| **RF24** | Os dashboards devem incluir análises estatísticas, como médias diárias, tendências e correlações entre parâmetros. | Média 🛠️       |
-| **RF25** | O sistema deve gerar pelo menos três tipos de relatórios (resumo diário, análise mensal e alertas disparados), exportáveis em PDF ou Excel. | Média 🛠️       |
+| **RF14** | O datalogger deve enviar os dados coletados ao servidor central a cada hora, via Wi-Fi ou conexão celular. | Baixa 🌱       |
+| **RF15** | A equipe deve selecionar componentes de baixo custo para a estação meteorológica, incluindo sensores de vento, pluviômetro, umidade, temperatura e pressão. | Baixa 🌱       |
+| **RF16** | A equipe deve montar fisicamente a estação meteorológica, garantindo que todos os sensores estejam calibrados e operacionais. | Baixa 🌱       |
+| **RF17** | A equipe deve testar e calibrar a estação meteorológica para garantir precisão dos dados dentro de ±2% de erro. | Baixa 🌱       |
+| **RF18** | O sistema deve incluir um guia educativo no portal, explicando o significado de cada parâmetro meteorológico medido. zover | Baixa 🌱       |
+| **RF19** | O guia educativo deve explicar conceitos matemáticos (ex.: média, desvio padrão) usados nos cálculos dos parâmetros. | Baixa 🌱       |
+| **RF20** | O tutorial educativo deve ser acessível no portal do sistema, com navegação intuitiva para usuários públicos. | Baixa 🌱       |
+| **RF21** | O sistema deve implementar controle de acesso para administradores, permitindo gerenciar estações, parâmetros, alertas e usuários. | Média 🛠️       |
+| **RF22** | O sistema deve permitir que usuários públicos visualizem dashboards e relatórios, sem permissões de edição. | Média 🛠️       |
+| **RF23** | Os dashboards devem incluir análises estatísticas, como médias diárias, tendências e correlações entre parâmetros. | Média 🛠️       |
+| **RF24** | O sistema deve gerar pelo menos três tipos de relatórios (resumo diário, análise mensal e alertas disparados), exportáveis em PDF ou Excel. | Média 🛠️       |
 
 ---
 
@@ -110,19 +109,18 @@ Abaixo estão as atividades planejadas para a Sprint 3, detalhando as tarefas ne
 | 10     | Implementar geração automática de notificações                           | RF10                      | Sprint 02    | Concluído    |
 | 11     | Definir condições para disparo de alertas                                | RF11                      | Sprint 02    | Concluído    |
 | 12     | Implementar notificação de usuários sobre os alertas                     | RF12                      | Sprint 02    | Concluído    |
-| 13     | Integrar conceitos estatísticos nos dashboards                           | RF24                      | Sprint 02    | Concluído    |
-| 14     | Criar pelo menos três relatórios distintos com insights                  | RF25                      | Sprint 02    | Concluído    |
-| 15     | Implementar controle de acesso para administradores                      | RF22                      | Sprint 02    | Concluído    |
-| 16     | Implementar controle de acesso para usuários públicos                    | RF23                      | Sprint 02    | Concluído    |
+| 13     | Integrar conceitos estatísticos nos dashboards                           | RF23                      | Sprint 02    | Concluído    |
+| 14     | Criar pelo menos três relatórios distintos com insights                  | RF24                      | Sprint 02    | Concluído    |
+| 15     | Implementar controle de acesso para administradores                      | RF21                      | Sprint 02    | Concluído    |
+| 16     | Implementar controle de acesso para usuários públicos                    | RF22                      | Sprint 02    | Concluído    |
 | 17     | Desenvolver um datalogger para coleta de dados                           | RF13                      | Sprint 03    | Pendente     |
-| 18     | Implementar armazenamento temporário dos dados coletados pelo datalogger | RF14                      | Sprint 03    | Pendente     |
-| 19     | Enviar os dados coletados pelo datalogger para o servidor                | RF15                      | Sprint 03    | Pendente     |
-| 20     | Selecionar componentes para montagem da estação meteorológica            | RF16                      | Sprint 03    | Pendente     |
-| 21     | Montar fisicamente a estação meteorológica                               | RF17                      | Sprint 03    | Pendente     |
-| 22     | Testar e calibrar a estação meteorológica                                | RF18                      | Sprint 03    | Pendente     |
-| 23     | Criar guia explicativo sobre os parâmetros meteorológicos                | RF19                      | Sprint 03    | Pendente     |
-| 24     | Incluir conceitos matemáticos no guia educativo                          | RF20                      | Sprint 03    | Pendente     |
-| 25     | Disponibilizar o tutorial educativo no portal do sistema                 | RF21                      | Sprint 03    | Pendente     |
+| 18     | Enviar os dados coletados pelo datalogger para o servidor                | RF14                      | Sprint 03    | Pendente     |
+| 19     | Selecionar componentes para montagem da estação meteorológica            | RF15                      | Sprint 03    | Pendente     |
+| 20     | Montar fisicamente a estação meteorológica                               | RF16                      | Sprint 03    | Pendente     |
+| 21     | Testar e calibrar a estação meteorológica                                | RF17                      | Sprint 03    | Pendente     |
+| 22     | Criar guia explicativo sobre os parâmetros meteorológicos                | RF18                      | Sprint 03    | Pendente     |
+| 23     | Incluir conceitos matemáticos no guia educativo                          | RF19                      | Sprint 03    | Pendente     |
+| 24     | Disponibilizar o tutorial educativo no portal do sistema                 | RF20                      | Sprint 03    | Pendente     |
 
 ---
 
