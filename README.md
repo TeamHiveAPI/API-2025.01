@@ -5,7 +5,7 @@ Projeto desenvolvido pela Fatec SJC em parceria com a Tecsus para criar um siste
 
 ---
 
-## Sprint 3 - Sprint Backlog
+## Sprint 1 - Sprint Backlog
 
 ### 🎯 Objetivo da Sprint
 Desenvolver funcionalidades relacionadas ao datalogger para coleta, armazenamento e envio de dados, montar e calibrar a estação meteorológica física, e implementar o guia educativo no portal para promover educação ambiental e conceitos matemáticos.
@@ -14,23 +14,24 @@ Desenvolver funcionalidades relacionadas ao datalogger para coleta, armazenament
 
 ### 📋 Sprint Backlog
 
-Abaixo estão as atividades planejadas para a Sprint 3, detalhando as tarefas necessárias para implementar os requisitos priorizados.
+Abaixo estão as atividades planejadas para a Sprint 1, detalhando as tarefas necessárias para implementar os requisitos priorizados.
 
 
-| **ID**     | **Descrição**                                                                                                          | **Estimativa de Esforço** | **Estimativa de Dificuldade** | **Product Backlog ID** |
-|------------|-----------------------------------------------------------------------------------------------------------------------|---------------------------|-------------------------------|-------------------------|
-| **SB3-01** | Implementar o datalogger para coletar dados dos sensores a cada 10 minutos e enviá-los ao servidor.                    | 10 horas                  | Alta                          | 17                        |
-| **SB3-02** | Desenvolver a lógica para enviar os dados coletados pelo datalogger ao servidor a cada 10 minutos via MQTT pelo broker Mosquitto. | 10 horas                  | Alta                          | 18                        |
-| **SB3-03** | Montar fisicamente a estação meteorológica, garantindo a integração e o funcionamento de todos os sensores.            | 12 horas                  | Alta                          | 19 & 20                        |
-| **SB3-04** | Testar e calibrar a estação meteorológica para garantir a precisão dos dados dentro de ±2% de erro.                    | 10 horas                  | Alta                          | 21                        |
-| **SB3-05** | Desenvolver o guia educativo no portal, explicando os parâmetros meteorológicos (ex.: temperatura, umidade).           | 8 horas                   | Média                         | 22                        |
-| **SB3-06** | Incluir explicações de conceitos matemáticos (ex.: média, desvio padrão) no guia educativo.                           | 6 horas                   | Média                         | 23                        |
-| **SB3-07** | Criar uma interface intuitiva no portal para navegação do tutorial educativo, acessível a usuários públicos.           | 8 horas                   | Média                         | 24                        |
+| **ID**     | **Descrição**                                                                                                          | **Estimativa de Esforço** | **Estimativa de Dificuldade** | **Product Backlog ID**  |
+|------------|------------------------------------------------------------------------------------------------------------------------|---------------------------|-------------------------------|-------------------------|
+| **SB1-01** | Implementar CRUD de estações meteorológicas (back)                                                                     | 10 horas                  | Alta                          | 1                       |
+| **SB1-02** | Implementar CRUD de estações meteorológicas (front)                                                                    | 10 horas                  | Alta                          | 1                       |
+| **SB1-03** | Implementar CRUD de parâmetros meteorológicos (back)                                                                   | 12 horas                  | Alta                          | 2                       |
+| **SB1-04** | Implementar CRUD de sensores meteorológicos (front)                                                                    | 10 horas                  | Alta                          | 2                       |
+| **SB1-05** | Implementar CRUD de alertas (back)                                                                                     | 9 horas                   | Alta                          | 3                       |
+| **SB1-06** | Implementar CRUD de alertas (front)                                                                                    | 9 horas                   | Alta                          | 3                       |
+| **SB1-07** | Implementar CRUD de usuários (back)                                                                                    | 10 horas                  | Alta                          | 4                       |
+| **SB1-08** | Implementar CRUD de usuários (front)                                                                                   | 10 horas                  | Alta                          | 4                       |
 
 ---
 
 ### 📝 Notas sobre o Sprint Backlog
-- **Estimativa de Esforço**: Total de **72 horas**.
+- **Estimativa de Esforço**: Total de **80 horas**.
 - **Estimativa de Dificuldade**:
   - **Média**: Tarefas que envolvem desenvolvimento de interfaces ou configurações.
   - **Alta**: Tarefas complexas, como implementação do datalogger, montagem física e calibração da estação.
