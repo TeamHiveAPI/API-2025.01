@@ -5,7 +5,7 @@ Projeto desenvolvido pela Fatec SJC em parceria com a Tecsus para criar um siste
 
 ---
 
-## Sprint 3 - Sprint Backlog
+## Sprint 2 - Sprint Backlog
 
 ### 🎯 Objetivo da Sprint
 Desenvolver funcionalidades relacionadas ao datalogger para coleta, armazenamento e envio de dados, montar e calibrar a estação meteorológica física, e implementar o guia educativo no portal para promover educação ambiental e conceitos matemáticos.
@@ -14,18 +14,23 @@ Desenvolver funcionalidades relacionadas ao datalogger para coleta, armazenament
 
 ### 📋 Sprint Backlog
 
-Abaixo estão as atividades planejadas para a Sprint 3, detalhando as tarefas necessárias para implementar os requisitos priorizados.
-
+Abaixo estão as atividades planejadas para a Sprint 2, detalhando as tarefas necessárias para implementar os requisitos priorizados.
 
 | **ID**     | **Descrição**                                                                                                          | **Estimativa de Esforço** | **Estimativa de Dificuldade** | **Product Backlog ID** |
 |------------|-----------------------------------------------------------------------------------------------------------------------|---------------------------|-------------------------------|-------------------------|
-| **SB3-01** | Implementar o datalogger para coletar dados dos sensores a cada 10 minutos e enviá-los ao servidor.                    | 10 horas                  | Alta                          | 17                        |
-| **SB3-02** | Desenvolver a lógica para enviar os dados coletados pelo datalogger ao servidor a cada 10 minutos via MQTT pelo broker Mosquitto. | 10 horas                  | Alta                          | 18                        |
-| **SB3-03** | Montar fisicamente a estação meteorológica, garantindo a integração e o funcionamento de todos os sensores.            | 12 horas                  | Alta                          | 19 & 20                        |
-| **SB3-04** | Testar e calibrar a estação meteorológica para garantir a precisão dos dados dentro de ±2% de erro.                    | 10 horas                  | Alta                          | 21                        |
-| **SB3-05** | Desenvolver o guia educativo no portal, explicando os parâmetros meteorológicos (ex.: temperatura, umidade).           | 8 horas                   | Média                         | 22                        |
-| **SB3-06** | Incluir explicações de conceitos matemáticos (ex.: média, desvio padrão) no guia educativo.                           | 6 horas                   | Média                         | 23                        |
-| **SB3-07** | Criar uma interface intuitiva no portal para navegação do tutorial educativo, acessível a usuários públicos.           | 8 horas                   | Média                         | 24                        |
+| **SB2-01** | Configurar o broker Mosquitto para simular o envio de dados das estações meteorológicas via MQTT.                      | 4 horas                   | Baixa                        | 5                       |
+| **SB2-02** | Criar scripts em Python para gerar e enviar dados falsos (ex.: temperatura, umidade) via MQTT.                         | 6 horas                   | Média                        | 5                       |
+| **SB2-03** | Implementar a lógica no backend para receber e processar os dados enviados via MQTT.                                   | 12 horas                  | Alta                         | 5, 6                    |
+| **SB2-04** | Armazenar os dados processados no banco de dados, associando-os à estação e ao parâmetro.                              | 8 horas                   | Média                        | 7                       |
+| **SB2-05** | Criar endpoints da API para consulta de dados em tempo real e históricos.                                              | 10 horas                  | Alta                         | 6                       |
+| **SB2-06** | Desenvolver o dashboard front-end para visualização de dados em tempo real, com gráficos atualizados via WebSocket.    | 10 horas                  | Alta                         | 8                       |
+| **SB2-07** | Desenvolver o dashboard front-end para visualização de histórico de dados, com filtros por data, estação e parâmetro.  | 8 horas                   | Média                        | 9                       |
+| **SB2-08** | Implementar a lógica para verificar periodicamente as condições de alerta (ex.: temperatura > 35°C).                   | 8 horas                   | Média                        | 11                      |
+| **SB2-09** | Implementar o disparo de notificações (e-mail ou SMS) quando uma condição de alerta for atingida.                      | 10 horas                  | Alta                         | 10, 12                  |
+| **SB2-10** | Implementar autenticação no sistema para controlar o acesso às funcionalidades administrativas e públicas.             | 12 horas                  | Alta                         | 15, 16                  |
+| **SB2-11** | Integrar métricas estatísticas nos dashboards (ex.: médias, tendências).                                               | 8 horas                   | Alta                         | 13                      |
+| **SB2-12** | Desenvolver pelo menos três relatórios distintos (ex.: resumo diário, análise mensal, alertas disparados).             | 10 horas                  | Alta                         | 14                      |
+| **SB2-13** | Adicionar um mapa no dashboard front-end para exibir a localização da estação quando houver um alerta ativo.           | 6 horas                   | Média                        | 8                       |
 
 ---
 
