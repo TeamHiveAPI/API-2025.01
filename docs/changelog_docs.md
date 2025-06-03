@@ -4,6 +4,20 @@ Registro de alterações na estrutura e arquivos de documentação do projeto.
 
 ---
 
+## [0.4.0] - 2025-06-03
+
+### 📂 Estrutura
+- Atualizada a organização dos documentos em "Documentos de Processo" e "Documentos de Produto" no arquivo `docs/fluxo_documentacao.md`.
+- Adicionados e corrigidos links para seções específicas da Wiki de Quality Assurance.
+- Incluído o tópico "Resultados do Quality Assurance" em Documentos de Produto.
+- Adicionada seção de justificativa para a separação entre documentos de processo e de produto, com referência a normas e frameworks reconhecidos.
+
+### 🛠️ Melhorias
+- Revisão ortográfica e padronização do arquivo `docs/fluxo_documentacao.md`.
+- Melhoria na clareza e rastreabilidade da documentação, facilitando a manutenção e entendimento por parte do time e avaliadores.
+
+---
+
 ## [0.3.0] - 2025-05-21
 
 ### 📂 Estrutura
