@@ -18,8 +18,7 @@ A documentação está organizada em dois grandes grupos:
   - Frontend: [changelog.md](https://github.com/TeamHiveAPI/API-2025.01-FRONT/blob/main/changelog.md)
 - **Política de Versionamento e Padrão de Branch:** [Wiki - Critérios para atualização de versões e controle de mudanças](https://github.com/TeamHiveAPI/API-2025.01/wiki/Controle-de-Vers%C3%A3o-e-Padr%C3%A3o-de-Branch#controle-de-vers%C3%A3o)
 - **Backlog da Sprint:** [Wiki - Planejamento e acompanhamento das tarefas da sprint](https://github.com/TeamHiveAPI/API-2025.01/wiki/Rastreabilidade-de-Requisitos#sprint-backlog)
-- **Templates de Processo:**
-  - [docs/templates/template_instalacao.md](../templates/template_instalacao.md)
+- **Template de Processo:**
   - [docs/templates/template_changelog.md](../templates/template_changelog.md)
 - **Gestão Visual de Tarefas:** [Quality Assurance - Gestão Visual de Tarefas - Scrum](https://github.com/TeamHiveAPI/API-2025.01/wiki/Quality-Assurance#-gest%C3%A3o-visual-de-tarefas---scrum)
 - **Documentação Contínua:** [Quality Assurance - Documentação Contínua](https://github.com/TeamHiveAPI/API-2025.01/wiki/Quality-Assurance#-documenta%C3%A7%C3%A3o-cont%C3%ADnua)
@@ -42,6 +41,8 @@ A documentação está organizada em dois grandes grupos:
   - [docs/templates/template_arquitetura.md](../templates/template_arquitetura.md)
   - [docs/templates/template_rotasBackend.md](../templates/template_rotasBackend.md)
   - [docs/templates/template_manual.md](../templates/template_manual.md)
+  - [docs/templates/template_instalacao.md](../templates/template_instalacao.md)
+
 - **Cobertura de Testes:** [Quality Assurance - Cobertura de Testes](https://github.com/TeamHiveAPI/API-2025.01/wiki/Quality-Assurance#cobertura-de-testes)
 - **Padrões de Código:** [Quality Assurance - Sobre Qualidade de Código](https://github.com/TeamHiveAPI/API-2025.01/wiki/Quality-Assurance#-sobre-qualidade-de-c%C3%B3digo)
 - **Facilidade de Manutenção:** [Quality Assurance - Facilidade de Manutenção](https://github.com/TeamHiveAPI/API-2025.01/wiki/Quality-Assurance#-facilidade-de-manuten%C3%A7%C3%A3o)
@@ -72,7 +73,7 @@ A documentação está organizada em dois grandes grupos:
 ## ℹ️ Justificativa da Classificação dos Documentos
 
 **Documentos de Processo:**  
-São aqueles que descrevem como o time trabalha, define padrões, políticas, templates, governança, rastreabilidade e práticas de desenvolvimento. Eles garantem a organização, a qualidade e a previsibilidade do trabalho, independentemente do produto final. Exemplos: changelogs, políticas de versionamento, templates, gestão visual de tarefas, automação de processos, etc.
+São aqueles que descrevem como o time trabalha, define padrões, políticas, templates e práticas de desenvolvimento. Eles garantem a organização, a qualidade e a previsibilidade do trabalho, independentemente do produto final. Exemplos: changelogs, políticas de versionamento, templates, gestão visual de tarefas, automação de processos, etc.
 
 **Documentos de Produto:**  
 São aqueles que descrevem o que o sistema entrega ao usuário final, detalhando funcionalidades, requisitos, arquitetura, rotas, manuais, padrões de código e resultados de qualidade. Eles documentam as características, funcionamento e qualidade do produto entregue. Exemplos: guia de instalação, documentação de rotas, arquitetura, requisitos, backlog do produto, padrões de código, resultados do quality assurance, etc.
