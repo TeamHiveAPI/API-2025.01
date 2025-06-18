@@ -4,6 +4,14 @@ Registro de alterações na estrutura e arquivos de documentação do projeto.
 
 ---
 
+## [0.4.1] - 2025-06-18
+
+### 📄 Atualizações de Documentos
+- Atualizado o [documento de arquitetura](https://github.com/TeamHiveAPI/API-2025.01/wiki/Docs#arquitetura) para incluir o modelo atual de arquitetura utilizada pelo sistema.
+- Atualizado o [documento de rotas do backend](https://github.com/TeamHiveAPI/API-2025.01/wiki/Docs#rotas-do-backend) para incluir todas as rotas atuais do sistema.
+
+---
+
 ## [0.4.0] - 2025-06-03
 
 ### 📂 Estrutura
