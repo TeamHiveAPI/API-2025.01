@@ -4,6 +4,12 @@ Registro de alterações na estrutura e arquivos de documentação do projeto.
 
 ---
 
+## [0.4.2] - 2025-06-30
+
+### 📄 Atualizações de Documentos
+- Atualizando o fluxo de documentação acrescentando documento de guia de testes de integração.
+
+
 ## [0.4.1] - 2025-06-18
 
 ### 📄 Atualizações de Documentos
