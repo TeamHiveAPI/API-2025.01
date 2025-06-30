@@ -23,6 +23,8 @@ A documentação está organizada em dois grandes grupos:
   - [docs/templates/template_changelog.md](../templates/template_changelog.md)
 - **Escalabilidade de Processos:** [Quality Assurance - Escalabilidade de Processos](https://github.com/TeamHiveAPI/API-2025.01/wiki/Quality-Assurance#-escalabilidade-de-processos)
 - **Automação de Build, Teste e Deploy:** [Quality Assurance - Automação de Build, Teste e Deploy](https://github.com/TeamHiveAPI/API-2025.01/wiki/Quality-Assurance#automação-de-build-teste-e-deploy)
+- **Guia de testes de Integração:**
+    -[Guia-de-testes-de-integração](https://github.com/TeamHiveAPI/API-2025.01/wiki/Docs#Guia-de-testes-de-integra%C3%A7%C3%A3o) 
 
 ---
 
